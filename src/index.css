@@ -1,13 +1,192 @@
+@import url(https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css);
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+  background: url('D:\cipher school\react app\todo-list\public\images\pexels-thepaintedsquare-606539.jpg') no-repeat center center fixed; /* URL of your background image */
+  background-size: cover; 
+  color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a90e2; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+  margin-bottom: 20px; 
+  letter-spacing: 1px; 
+}
+
+h3 {
+  font-size: 1.8rem; 
+  font-weight: 600;
+  color: #f39c12; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+  margin-bottom: 15px; 
+  letter-spacing: 1px; 
+  border-bottom: 2px solid #f39c12; 
+  padding-bottom: 10px; 
+}
+
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.center {
+  text-align: center;
+}
+
+.screen {
+  padding: 5vh 10%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 5vh auto;
+  max-width: 800px;
+}
+
+
+.ui.form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ui.form:hover {
+  transform: translateY(-3px);
+}
+
+.ui.form input, .ui.form textarea {
+  border-radius: 5px !important;
+  border: 1px solid #ddd !important;
+  box-shadow: none !important;
+  padding: 10px !important;
+}
+
+.ui.primary.button {
+  background-color: #4a90e2 !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease;
+}
+
+.ui.primary.button:hover {
+  background-color: #357abd !important;
+}
+
+.ui.secondary.button {
+  background-color: #ddd !important;
+  color: #333 !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease;
+}
+
+.ui.secondary.button:hover {
+  background-color: #bbb !important;
+}
+
+
+.ui.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(50% - 20px);
+  min-width: 280px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card .content {
+  padding: 15px;
+}
+
+.card .header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #4a90e2;
+}
+
+.card .meta {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.card .description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+
+.card .extra.content {
+  background-color: #f4f4f9;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui.basic.green.button {
+  color: #21ba45 !important;
+  border-color: #21ba45 !important;
+  transition: background-color 0.3s ease;
+}
+
+.ui.basic.green.button:hover {
+  background-color: #21ba4511 !important;
+}
+
+.ui.basic.red.button {
+  color: #db2828 !important;
+  border-color: #db2828 !important;
+  transition: background-color 0.3s ease;
+}
+
+.ui.basic.red.button:hover {
+  background-color: #db282811 !important;
+}
+
+.card, .ui.form, .ui.button {
+  transition: all 0.3s ease;
+}
+
+.card:hover .content {
+  transform: scale(1.01);
+}
+
+section {
+  padding: 3vh 0;
+}
+
+@media (max-width: 600px) {
+  .screen {
+    padding: 5vh 5%;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
